@@ -1,0 +1,75 @@
+.skills {
+  padding: 4rem 2rem;
+  background-color: #0F0E17;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #d23816;
+  margin-bottom: 2rem;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Skill card with background box */
+.skill-card {
+  background-color: #1A1A2E;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 120px;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #7fe531;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* Slide in from left */
+.slide-in-left {
+  animation: slideLeft 1.2s ease-out forwards;
+}
+
+/* Slide in from right */
+.slide-in-right {
+  animation: slideRight 1.2s ease-out forwards;
+}
+
+/* Animation keyframes */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

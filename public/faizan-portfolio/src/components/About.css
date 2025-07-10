@@ -1,0 +1,32 @@
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #0F0E17;
+  color: white;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #cf1919;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  text-align: left; /* ✅ Left aligned now */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show-about p {
+  opacity: 1;
+  transform: translateY(0);
+}

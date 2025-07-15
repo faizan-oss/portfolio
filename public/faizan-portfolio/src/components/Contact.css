@@ -6,7 +6,6 @@
 }
 
 .contact h2 {
-  color: #cf1919;
   margin-bottom: 2rem;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .contact button {
-  background-color: #cf1919;
+  background-color: #e06704fa;
   color: white;
   border: none;
   padding: 0.75rem;

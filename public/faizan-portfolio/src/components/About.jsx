@@ -28,7 +28,8 @@ export default function About() {
   return (
     <section id="about" className="about-section fade-about" ref={aboutRef}>
       <div className="about-container">
-        <h2>About Me</h2>
+        <h2   className="gradient-text"
+  style={{ backgroundImage:  'linear-gradient(to right, #f5af19, #f12711)' }}>About Me</h2>
         <p>
          A Full Stack Developer with a B.Tech in Computer Science and Information Technology.
         </p>

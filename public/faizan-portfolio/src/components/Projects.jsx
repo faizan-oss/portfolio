@@ -37,7 +37,8 @@ export default function Projects() {
 
   return (
     <section className="projects" id="projects" ref={ref}>
-      <h2>Projects</h2>
+      <h2 className="gradient-text"
+  style={{ backgroundImage:  'linear-gradient(to right, #f5af19, #f12711)' }}>Projects</h2>
       <div className={`project-grid ${inView ? 'fade-in' : ''}`}>
         {projects.map((project, idx) => (
           <div className="project-card" key={idx}>

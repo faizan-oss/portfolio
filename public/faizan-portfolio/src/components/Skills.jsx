@@ -24,7 +24,8 @@ export default function Skills() {
 
   return (
     <section className="skills" id="skills" ref={ref}>
-      <h2>Tech Stack</h2>
+      <h2 className="gradient-text"
+  style={{ backgroundImage:  'linear-gradient(to right, #f5af19, #f12711)' }}>Tech Stack</h2>
 
       <div className={`skills-row ${inView ? 'slide-in-left' : ''}`}>
         {firstHalf.map((skill, idx) => (

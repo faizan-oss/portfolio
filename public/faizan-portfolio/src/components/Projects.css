@@ -7,7 +7,7 @@
 .projects h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
-  color: #d23816;
+  color: #e06704fa;
 }
 
 .project-grid {
@@ -34,7 +34,7 @@
 }
 
 .project-card h3 {
-  color: #d23816;
+  color: #e06704fa;
 }
 
 .tags {
@@ -53,7 +53,7 @@
 
 .links a {
   margin-right: 1rem;
-  color: #d23816;
+  color:#e06704fa;
   text-decoration: none;
   font-weight: bold;
 }

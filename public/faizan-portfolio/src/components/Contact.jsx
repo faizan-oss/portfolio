@@ -38,7 +38,8 @@ export default function Contact() {
 
   return (
     <section className="contact" id="contact">
-      <h2>Contact Me</h2>
+      <h2 className="gradient-text"
+  style={{ backgroundImage:  'linear-gradient(to right, #f5af19, #f12711)' }}>Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

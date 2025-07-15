@@ -6,7 +6,8 @@ export default function Education() {
 
   return (
     <section className="education" id="education" ref={ref}>
-      <h2>Education</h2>
+      <h2 className="gradient-text"
+  style={{ backgroundImage:  'linear-gradient(to right, #f5af19, #f12711)' }}>Education</h2>
       <div className={`edu-list ${inView ? 'slide-in-left' : ''}`}>
         <div className="edu-item">
           <h3>B.Tech in CS & IT</h3>
@@ -25,7 +26,8 @@ export default function Education() {
         </div>
       </div>
 
-      <h2>Certificates</h2>
+      <h2 className="gradient-text"
+  style={{ backgroundImage:  'linear-gradient(to right, #f5af19, #f12711)' }}>Certificates</h2>
       <ul className={`cert-list ${inView ? 'slide-in-left' : ''}`}>
         <li>ServiceNow Application Developer & Administrator</li>
         <li>Frontend Web Development (Meta)</li>

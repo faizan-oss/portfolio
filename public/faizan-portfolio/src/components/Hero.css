@@ -1,6 +1,8 @@
 .hero {
   padding: 4rem 2rem;
   background-color: #0F0E17;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .hero-content {
@@ -34,7 +36,7 @@
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.8rem 1.5rem;
-  background-color: #d23816;
+  background-color: #e06704fa;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;

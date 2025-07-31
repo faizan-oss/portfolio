@@ -241,11 +241,26 @@
   .links {
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Ensure full width for buttons */
   }
   
   .links a {
     width: 100%;
     text-align: center;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Social icons horizontal on mobile (template, adjust class if needed) */
+@media (max-width: 480px) {
+  .social-icons {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 

@@ -12,7 +12,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Socket.IO", "MongoDB", "NodeJS"],
     live: "https://rps-royals.vercel.app/",  
     code: "https://github.com/faizan-oss/RPS-Royals",
-    image: "/public/profile/RPS.png"
+    image: "/profile/RPS.png"
   },
   {
     title: "WBC News (BBC Clone)",
@@ -24,7 +24,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://visionary-gumption-09d797.netlify.app/",  
     code: "https://github.com/faizan-oss/wbc",
-    image: "/public/profile/WBC.png"
+    image: "/profile/WBC.png"
   },
   {
     title: "MIT TechCart",
@@ -36,7 +36,7 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     live: "https://mit-techcart.vercel.app/",
     code: "https://github.com/jasminekeshari/2409",
-    image: "/public/profile/MIT.png"
+    image: "/profile/MIT.png"
   },
   {
     title: "Aniverse",
@@ -48,7 +48,7 @@ const projects = [
     tags: ["React", "Firebase", "Material UI"],
     live: "https://melodious-gnome-8dad79.netlify.app/",
     code: "https://github.com/faizan-oss/Aniverse",
-    image: "/public/profile/Anniverse.png"
+    image: "/profile/Anniverse.png"
   },
 ];
 

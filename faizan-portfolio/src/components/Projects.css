@@ -1,0 +1,252 @@
+.projects {
+  padding: 2rem 2rem;
+  background-color: #0F0E17;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #e06704fa;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.project-item {
+  width: 100%;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #1A1A2E;
+  border: 1px solid #2C2C3A;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.project-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(224, 103, 4, 0.1), rgba(167, 134, 223, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.project-content:hover::before {
+  opacity: 1;
+}
+
+.project-content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 32px rgba(224, 103, 4, 0.2);
+  border-color: #e06704fa;
+}
+
+.project-info {
+  text-align: left;
+  color: #fff;
+  width: 100%;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #e06704fa;
+  font-weight: 600;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #ccc;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.project-description li {
+  position: relative;
+  margin-bottom: 0.6rem;
+  padding-left: 1rem;
+}
+
+.project-description li::before {
+  content: '•';
+  color: #e06704fa;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+  top: 0;
+}
+
+.tags {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #2C2C3A;
+  color: #A786DF;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #e06704fa;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #e06704fa;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #e06704fa;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  background-color: #e06704fa;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(224, 103, 4, 0.3);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-content:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Slide in from left */
+.slide-in-left {
+  animation: slideLeft 1.2s ease-out forwards;
+}
+
+/* Animation keyframes */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects {
+    padding: 2rem 1rem;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .project-content {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .project-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .project-image img {
+    height: 180px;
+  }
+  
+  .links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    gap: 1rem;
+  }
+  
+  .project-content {
+    padding: 0.8rem;
+  }
+  
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .project-image img {
+    height: 150px;
+  }
+  
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .links a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+

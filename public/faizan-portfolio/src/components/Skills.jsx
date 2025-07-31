@@ -14,7 +14,6 @@ const skills = [
   { name: "Postman", icon: "/icons/Postman.png" },
   { name: "Express", icon: "/icons/Express.png" },
 ];
-;
 
 const firstHalf = skills.slice(0, 6);
 const secondHalf = skills.slice(6, 12);

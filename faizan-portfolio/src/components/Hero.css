@@ -61,6 +61,11 @@
   object-fit: cover;
 }
 @media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  
+
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -68,9 +73,44 @@
 
   .hero-text {
     margin-right: 0;
+    min-width: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
   }
 
   .hero-image {
     margin-top: 1rem;
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 0.8rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cta {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
   }
 }

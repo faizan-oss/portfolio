@@ -1,0 +1,94 @@
+.github-section {
+  padding: 4rem 2rem;
+  background-color: #0F0E17;
+  color: white;
+  text-align: center;
+}
+
+.github-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.github-widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.calendar-box {
+  width: 100%;
+  max-width: 800px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.neon-box {
+  padding: 1.5rem;
+  border: 2px solid #A786DF;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #A786DF, 0 0 20px #A786DF50, 0 0 40px #A786DF30;
+  background-color: rgba(26, 26, 46, 0.6);
+  transition: all 0.3s ease;
+  max-width: 90%;
+  overflow-x: auto;
+}
+
+.neon-box:hover {
+  box-shadow: 0 0 20px #e06704fa, 0 0 30px #A786DF80, 0 0 60px #A786DF40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .github-section {
+    padding: 3rem 1rem;
+  }
+
+  .github-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .github-widgets {
+    gap: 1.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .neon-box {
+    padding: 1.2rem;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .github-section {
+    padding: 2rem 0.8rem;
+  }
+
+  .github-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .github-widgets {
+    gap: 1rem;
+  }
+
+  .stats-grid {
+    gap: 0.8rem;
+  }
+
+  .neon-box {
+    padding: 1rem;
+    max-width: 100%;
+  }
+}

@@ -63,4 +63,50 @@
   align-items: center;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact form {
+    max-width: 100%;
+  }
+
+  .contact input,
+  .contact textarea {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 2rem 0.8rem;
+  }
+
+  .contact h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact input,
+  .contact textarea {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .contact button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+  }
+}
+
 

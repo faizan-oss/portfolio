@@ -109,3 +109,48 @@
   border-color: #e06704fa;
   color: #fff;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 1rem;
+  }
+
+  .education h2 {
+    font-size: 1.8rem;
+  }
+
+  .edu-item {
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .cert-list li {
+    padding: 1rem 1.2rem;
+    margin: 0.6rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .education {
+    padding: 2rem 0.8rem;
+  }
+
+  .education h2 {
+    font-size: 1.6rem;
+  }
+
+  .edu-item {
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .edu-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .cert-list li {
+    padding: 0.8rem 1rem;
+    margin: 0.5rem auto;
+  }
+}

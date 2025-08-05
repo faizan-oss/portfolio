@@ -1,12 +1,22 @@
 import { useState, useEffect } from 'react';
 import './Header.css';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  
   useEffect(() => {
     document.body.classList.toggle('no-scroll', isOpen);
   }, [isOpen]);
+
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/profile/Resume.pdf';
+    link.download = 'Faizan_Rahman_Khan_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <header className="header">
@@ -21,14 +31,23 @@ export default function Header() {
             <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
             <li><a href="#education" onClick={() => setIsOpen(false)}>Education</a></li>
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
-            <li>
+            <li className="resume-container">
               <a
-                href="https://drive.google.com/file/d/1jFnfol9M4yMts_05zxgtcAxLNg4s5OXl/view?usp=sharing"
+                href="https://drive.google.com/file/d/1DY8kn2Dmo7NlmoErWYYFBzKYWpiqj9ef/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="resume-link"
               >
                 Resume
+                <Download 
+                  size={16} 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    downloadResume();
+                  }}
+                  style={{ cursor: 'pointer' }}
+                />
               </a>
             </li>
           </ul>

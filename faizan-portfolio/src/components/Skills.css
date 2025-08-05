@@ -73,3 +73,52 @@
     opacity: 1;
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills {
+    padding: 3rem 1rem;
+  }
+
+  .skills h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-row {
+    gap: 1rem;
+  }
+
+  .skill-card {
+    width: 100px;
+    padding: 0.8rem;
+  }
+
+  .skill-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 2rem 0.8rem;
+  }
+
+  .skills h2 {
+    font-size: 1.6rem;
+  }
+
+  .skills-row {
+    gap: 0.8rem;
+  }
+
+  .skill-card {
+    width: 90px;
+    padding: 0.7rem;
+  }
+
+  .skill-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

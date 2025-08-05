@@ -21,9 +21,12 @@ body.no-scroll {
 
 .logo {
   font-size: 1.5rem;
-  margin-top: 120px;
   font-weight: bold;
   color: #e06704fa;
+  line-height: 1;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -35,6 +38,15 @@ body.no-scroll {
   list-style: none;
   display: flex;
   gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .nav-links li a {
@@ -42,21 +54,32 @@ body.no-scroll {
   color: #FFFFFF;
   font-weight: 500;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 
 .resume-link {
   background-color: #e06704fa;
   color: #fff;
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: background 0.3s ease;
-  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .resume-link:hover {
   background-color: #A786DF;
   color: #FFFFFF;
+}
+
+.resume-container {
+  display: flex;
+  align-items: center;
 }
 
 /* Burger button */
@@ -69,13 +92,23 @@ body.no-scroll {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .header-container {
+    padding: 0.6rem 1rem;
+    height: 80px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
   .burger {
     display: block;
   }
 
   .nav {
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     right: 0;
     background-color: #0F0E17;
@@ -93,5 +126,20 @@ body.no-scroll {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0.5rem 0.8rem;
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    top: 70px;
   }
 }

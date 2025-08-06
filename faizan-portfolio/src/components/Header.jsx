@@ -11,7 +11,7 @@ export default function Header() {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/profile/Resume.pdf';
+    link.href = '/profile/NewResume.pdf';
     link.download = 'Faizan_Rahman_Khan_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -33,7 +33,7 @@ export default function Header() {
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
             <li className="resume-container">
               <a
-                href="https://drive.google.com/file/d/1DY8kn2Dmo7NlmoErWYYFBzKYWpiqj9ef/view?usp=sharing"
+                href="https://drive.google.com/file/d/16mwgk9aIUTOIrEBEhh83x1Ss78sG1HqZ/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="resume-link"

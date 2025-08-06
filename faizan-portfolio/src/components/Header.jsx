@@ -11,7 +11,7 @@ export default function Header() {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/profile/NewResume.pdf';
+    link.href = '/profile/FaizanResume.pdf';
     link.download = 'Faizan_Rahman_Khan_Resume.pdf';
     document.body.appendChild(link);
     link.click();

@@ -33,7 +33,7 @@ export default function Header() {
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
             <li className="resume-container">
               <a
-                href="https://drive.google.com/file/d/16mwgk9aIUTOIrEBEhh83x1Ss78sG1HqZ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1DYJ-MP_SwJlDj6sY3fTD7SjxtLR1MQ26/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="resume-link"

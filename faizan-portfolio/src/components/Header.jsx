@@ -10,12 +10,16 @@ export default function Header() {
   }, [isOpen]);
 
   const downloadResume = () => {
+    // Download PDF
     const link = document.createElement('a');
-    link.href = '/profile/FaizanResume.pdf';
+    link.href = '/profile/FaizanResume.pdf?v=' + Date.now(); // Cache-busting
     link.download = 'Faizan_Rahman_Khan_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    
+    // Open Google Drive in new tab
+    window.open('https://drive.google.com/file/d/1DYJ-MP_SwJlDj6sY3fTD7SjxtLR1MQ26/view?usp=sharing', '_blank');
   };
 
   return (
@@ -32,23 +36,13 @@ export default function Header() {
             <li><a href="#education" onClick={() => setIsOpen(false)}>Education</a></li>
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
             <li className="resume-container">
-              <a
-                href="https://drive.google.com/file/d/1DYJ-MP_SwJlDj6sY3fTD7SjxtLR1MQ26/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
+              <button 
                 className="resume-link"
+                onClick={downloadResume}
               >
                 Resume
-                <Download 
-                  size={16} 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    downloadResume();
-                  }}
-                  style={{ cursor: 'pointer' }}
-                />
-              </a>
+                <Download size={16} />
+              </button>
             </li>
           </ul>
         </nav>

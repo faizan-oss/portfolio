@@ -70,6 +70,11 @@ body.no-scroll {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .resume-link:hover {

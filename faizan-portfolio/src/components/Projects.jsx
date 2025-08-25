@@ -2,6 +2,18 @@ import './Projects.css';
 import { useInView } from '../hooks/useInView';
 
 const projects = [
+    {
+  "title": "OG House - Food Ordering Platform",
+  "description": [
+    "Developed a complete food ordering system with admin dashboard for cloud kitchens to manage menus and process orders independently.",
+    "Built responsive frontend using React.js and Tailwind CSS, integrated payment gateway (Razorpay) and real-time order tracking system.",
+    "Implemented automated email notifications, image management with Cloudinary, and one-click Vercel deployment for rapid scaling."
+  ],
+  "tags": ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "Razorpay", "Cloudinary"],
+  "live": "https://og-house-bay.vercel.app/",
+  "code": "https://github.com/faizan-oss/Og-house",
+  "image": "/profile/ogHouse.png"
+},
   {
     title: "RPS Royals-Multiplayer Game",
     description: [
@@ -25,18 +37,6 @@ const projects = [
     live: "https://visionary-gumption-09d797.netlify.app/",  
     code: "https://github.com/faizan-oss/wbc",
     image: "/profile/WBC.png"
-  },
-  {
-    title: "MIT TechCart",
-    description: [
-      "Built a dynamic web platform for MIT students to buy and sell second-hand items like textbooks and gadgets.",
-      "Integrated REST APIs to fetch and display real-time product listings with enhanced user experience.",
-      "Encouraged sustainable and collaborative use of resources through interactive features and dynamic UI."
-    ],
-    tags: ["HTML", "CSS", "JavaScript"],
-    live: "https://mit-techcart.vercel.app/",
-    code: "https://github.com/jasminekeshari/2409",
-    image: "/profile/MIT.png"
   },
   {
     title: "Aniverse",

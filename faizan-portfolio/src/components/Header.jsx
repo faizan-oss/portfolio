@@ -12,14 +12,14 @@ export default function Header() {
   const downloadResume = () => {
     // Download PDF
     const link = document.createElement('a');
-    link.href = '/profile/FaizanResume.pdf?v=' + Date.now(); // Cache-busting
-    link.download = 'Faizan_Rahman_Khan_Resume.pdf';
+    link.href = '/profile/Faizan.pdf?v=' + Date.now(); // Cache-busting
+    link.download = 'Faizan.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     
     // Open Google Drive in new tab
-    window.open('https://drive.google.com/file/d/1DYJ-MP_SwJlDj6sY3fTD7SjxtLR1MQ26/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1OWUHAnD1j5e-KMr9fHesGIlQ6wUOsLfY/view?usp=sharing', '_blank');
   };
 
   return (
